@@ -13,4 +13,13 @@
 
 # name()
 import random
-random_number = random.randint(1, 100)
+random2 = random.choice(['rock', 'scissors', 'paper'])
+def game():
+    user = input("rock, scissors, paper: ")
+    if user == random2:
+        print("Draw")
+    elif (user == "rock" and random2 == "scissors") or (user == "scissors" and random2 == "paper") or (user == "paper" and random2 == "rock"):
+        print("You win")
+    else:
+        print("You lose")
+game()
