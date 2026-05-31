@@ -15,11 +15,14 @@
 import random
 random2 = random.choice(['rock', 'scissors', 'paper'])
 def game():
-    user = input("rock, scissors, paper: ")
+    user = input("rps:")
     if user == random2:
+        print("Computer:", random2)
         print("Draw")
     elif (user == "rock" and random2 == "scissors") or (user == "scissors" and random2 == "paper") or (user == "paper" and random2 == "rock"):
+        print("Computer:", random2)
         print("You win")
     else:
+        print("Computer:", random2)
         print("You lose")
 game()
